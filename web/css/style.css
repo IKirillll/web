@@ -1,0 +1,1288 @@
+/*Header*/
+.container {
+	width: 100%;
+	background-color: #6549D7;
+	margin: 0 auto;
+}
+.reg {
+    display: none;
+}
+.header__inner{
+	display: flex;
+	justify-content: space-between;
+	padding: 35px 0;
+	align-items: center;
+}
+.nav {
+	display: flex;
+font-size: 35px;
+font-weight: 700;
+}
+.nav__link {
+	text-decoration: none;
+	color: white;
+	letter-spacing: 0.8px;
+	font-family: 'Kaushan Script', cursive;
+}
+
+.nav__link:hover {
+	text-decoration:underline ;
+	color: #ffffcb;
+}
+.nav__link:visited{
+	text-decoration:none ;
+}
+.nav ul{
+	list-style-type: none;
+	padding: 0;
+}
+.nav ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.nav>ul>li {
+	float: left;
+}
+.nav ul ul li a:hover
+{
+	text-decoration:underline ;
+}
+.nav ul ul li a
+{
+	color: #6549D7;;
+}
+.nav ul li a
+{
+	text-decoration: none;
+	padding: 10px 17px;
+	font-family: 'Kaushan Script', cursive;
+
+}
+.nav ul ul {
+	display: none;
+	position: absolute;
+    z-index: 1;
+}
+.nav ul li:hover ul{
+	display: block;
+	background: white;
+  	border-radius: 5px;
+  	box-shadow: 0 0 30px rgba(0,0,0,.2);
+  	box-sizing: border-box;
+  	transition: .5s;
+}
+
+.logo {
+	margin-left: 30px;
+}
+.menu-open {
+	border: 0 solid black;
+	background-color: transparent;
+	display: none;
+	margin-right: 20px;
+}
+.menu__g{
+	display: flex;
+	align-items: center;
+	display: none;
+}
+.text{
+	margin-right: 20px;
+	text-decoration: none;
+	color: white;
+	letter-spacing: 0.8px;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 35px;
+	padding-bottom:15px ;
+}
+.container .show-menu{
+	display: flex;
+	justify-content: end;
+	position: absolute;
+	background: rgba(0, 0, 0, .4);
+	width: 75%;
+	height: 245px;
+}
+
+/*LC*/
+.content_lc {
+    flex: 1 0 auto;
+    display: flex;
+    justify-items: center;
+}
+.lc_inner{
+    display: flex;
+    flex-direction: row;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+.lc_left {
+    margin-right: 100px;
+}
+.lcab {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 15px;
+}
+.lc_p {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    margin-bottom: 15px;
+}
+.lc_current{
+            font-family: 'Kaushan Script', cursive;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    margin-bottom: 15px;
+}
+.lc_current a:hover {
+    text-decoration: underline;
+}
+.lc_current a{
+    color: #00000070;
+    text-decoration: none
+}
+.lc_p a {
+    text-decoration: none;
+        color: black;
+}
+.lc_p a:hover {
+    text-decoration: underline;
+}
+.lc_input {
+    margin-right: 20px;
+
+}
+.lc_title {
+        font-family: 'Kaushan Script', cursive;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+}
+.lc_input input,.lc_text_number input, .lc_text_bday input {
+    width: 100%;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 13px;
+    background-color: #f7f7f7;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 0 5px 8px;
+}
+
+.lc_text_email {
+    margin-left: 155px;
+}
+.lc_text_pas {
+    margin-left: 175px;
+}
+.lc_text_number {
+    margin-left: 160px;
+}
+.lc_text_bday {
+    margin-left: 120px;
+}
+.lc_text_gen {
+    margin-left: 195px;
+}
+.order_content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.order_img {
+    margin-right: 20px;
+}
+.return_img {
+    display: flex;
+    justify-content: center;
+}
+.return_img img,.sert_img img {
+    width: 75%;
+}
+.order_text {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    margin-bottom: 15px;
+}
+.order_button button{
+    font-size: 13px;
+     font-family: 'Kaushan Script', cursive;
+     letter-spacing: 0.8px;
+}
+/*Sing_Up*/
+
+/* Full-width input fields */
+.singup_input {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+/* Add a background color when the inputs get focus */
+.singup_input:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for all buttons */
+.singup_button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.singup_button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.singup_container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.singup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color:rgba(0, 0, 0, .5);
+    padding-top: 50px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+/* Modal Content/Box */
+.singup-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+.singup_hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+    width: 90%;
+}
+
+/* The Close Button (x) */
+.close {
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    float: right;
+    margin-right: 20px;
+}
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*Sing_in*/
+/* Full-width input fields */
+.singin_input[type=text], .singin_input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.singin_button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.singin_button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtnlog {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+
+.singin_container {
+    padding: 16px;
+}
+
+.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.singin {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+/* Modal Content/Box */
+.singin-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+
+.singin_input:focus {
+    background-color: #ddd;
+    outline: none;
+}
+.closelog:hover,
+.closelog:focus {
+    color: red;
+    cursor: pointer;
+}
+html  {
+  height: 100%;
+}
+body {
+     display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.wrapper {
+    position: relative;
+}
+
+
+/*Content*/
+.content {
+  flex: 1 0 auto; 
+  display: flex;
+  justify-items: center;
+}
+.left_block{
+    width: 20%;
+}
+.left_block img {
+    
+    max-width: 100%;
+     max-height: 100%;
+    position: sticky;
+    top: 0;
+}
+.right_block{
+    width: 20%;
+
+}
+.right_block img{
+    max-width: 100%;
+    max-height: 100%;
+    position: sticky;
+    top: 0;
+}
+.middle_block{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding:40px 0 10px ;
+}
+.block__item{
+border: 2.5px solid;
+padding: 12px;
+margin: 18px 18px;
+font-family: 'Kaushan Script', cursive;
+font-size: 20px;
+letter-spacing: 0.8px;
+box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.mes_1 {
+    border-color: #c74c08;
+    border-radius: 5px 20px 20px 5px;
+    text-align: left;
+}
+.mes_2 {
+    border-color:  #6eb7c0;
+    border-radius: 20px 5px 5px 20px;
+    text-align: right;
+}
+.a_mes {
+    color: red;
+    text-decoration: none;
+}
+.a_mes:hover{
+    text-decoration: underline;
+}
+/*Catalog*/
+.catalog {
+    margin: 20px 60px 20px 60px;
+
+}
+
+.catalog img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    padding: 5px;
+}
+.catalog_hr{
+    color: black;
+}
+.catalog__row{
+    display: flex;
+    justify-content: space-between;
+}
+.catalog__item{
+margin: 10px 0;
+}
+.catalog__title
+{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+.catalog_h{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+.catalog__a img:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 5px;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/*CLOTHES*/
+
+.content__clothes {
+    display: flex;
+    justify-content: center;
+    margin: 50px 70px;
+}
+.clothes {
+ position: relative;
+  display: flex;
+  width: 100%;
+  max-height: 80vh;
+  margin-left: 50px;
+}
+.clothes_item{
+  width: 100%;
+  max-height: 70vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.clothes_img{
+
+  width: 100%;
+  max-height: inherit;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.30), 0 10px 10px rgba(0,0,0,0.30);
+   
+}
+.clothes_item:hover {
+    opacity: 0.9;
+}
+.desc{
+      position: absolute;
+}
+.desc a {
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+.desc a:hover {
+    color: #ffffcb;
+    text-decoration: underline;
+}
+/*catalog*/
+.catalog__clothes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px;
+}
+.catalog__iner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.cc_item{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 0 20px 20px 20px;
+
+}
+.cc_item img {
+    border-radius: 5px;
+    max-width: 100% ;
+}
+.cc_item img:hover {
+    opacity: 0.8;
+}
+.cc_desc{
+    display: flex;
+   flex-direction: column;
+}
+.cc_a {
+    margin-left: auto;
+    display: flex;
+}
+.cc_a button {
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    background-color: red;
+}
+.cc_a:hover {
+    opacity: 0.5;
+}
+.o_text {
+    font-size: 15px;
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 0.8px;
+    padding-left: 10px;
+}
+.cc_text {
+    display: flex;
+    align-items: center;
+}
+
+.rub { 
+    line-height: 5px;
+    width: 0.4em;
+    border-bottom: 1px solid #000; 
+    display: inline-block;
+} 
+@font-face {
+  font-family: 'font-awesome';
+  src: url('../font/font-awesome-4.7.0/fonts/fontawesome-webfont.eot');
+  src: url('../font/font-awesome-4.7.0/fonts/fontawesome-webfont.woff') format('woff'),
+  url('../font/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf') format('truetype'),
+  url('.../font/font-awesome-4.7.0/fonts/fontawesome-webfont.svg#font-awesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.catalog_menu{
+    display: flex;
+    margin: 50px;
+    height: 35px;
+}
+.catalog_search{
+    display: flex;
+    width: 90%;
+}
+.catalog_search input {
+    width: 100%;
+    margin-left: 10px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 13px;
+    background-color: #f7f7f7;
+    border: none;
+    border-radius: 5px;
+    padding-left:8px ;
+}
+.catalog_button{
+    display: flex;
+    margin-left: auto;
+}
+.fa_button:first-child{
+    margin-right: 10px;
+}
+.fa_button {
+    border: none;
+    background-color: #ff4e4e;
+    border-radius: 20%;
+}
+.fa {
+    color: white;
+}
+.catalog_path{
+    display: flex;
+    margin: 0 50px;
+    flex-direction: column;
+}
+.path_title, .path_text{
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 0.8;
+}
+.catalog_filter {
+    margin-top: 20px;
+    display: flex;
+}
+/*catalog_filter*/
+.filter_title {
+    display: flex;
+}
+.filter_title_text {
+    margin-left: 15px;
+}
+.close_fiter_catalog {
+    margin-left: auto;
+    margin-right: 20px;
+
+}
+.close_fiter_catalog button{
+    background-color: #992f2f;
+    border: none;
+    font-size: 25px;
+    border-radius: 3px;
+}
+
+.item_title {
+    margin: 5px 0 10px 10px;
+    font-size: 16px;
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 0.8;
+}
+.catalog__filter{
+    width: 100%;
+    display: none;
+    position: absolute;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.catalog__filter_container {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+}
+
+
+.filter_param{
+    display: flex;
+    flex-direction: column;
+}
+.param_item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.ui-slider {
+    margin-bottom: 15px;
+    width: 90%;
+}
+.input_slider {
+    display: flex;   
+    flex-direction: row;
+    justify-content: space-between;
+}
+.min_input, .max_input {
+    width: 40%;
+}
+.input_slider input {
+    width: 50%;
+     padding-left: 5px;
+     font-family: 'Kaushan Script', cursive;
+     border: 1px solid black;
+     border-radius: 5px;
+}
+.min_input {
+    margin-left: 20px;
+}
+.max_input {
+    margin-left: auto;
+}
+.input_slaider:first-child{
+    width: 40%;
+}
+.item_content {
+    display: flex;
+    flex-direction: column;
+}
+.check_item{
+    margin-bottom: 5px;
+    font-family: 'Kaushan Script', cursive;
+}
+.check_item input {
+    background-color: #ededed;
+    width: 15px;
+   transform: scale(1.2);
+}
+.filter_title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 0.8px;
+    font-weight: 700;
+}
+.filter_title-show{
+    display: flex;
+    height: 100%;
+}
+.wrapper_block{
+   pointer-events: none; 
+}
+/*Product*/
+.product__inner{
+    display: flex;
+    margin: 20px 0;
+}
+.product_img {
+    display: flex;
+    width: 50%;
+    border-radius: 5px;
+    margin-left: 50px;
+}
+
+.pr_rating{
+    margin-bottom: 5px;
+}
+.fa-star {
+    color: black;
+}
+.pr_title, .pr_cost {
+    font-size: 25px;
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 0.8px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.pr_text  {
+    font-size: 15px;
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 0.8px;
+    margin-bottom: 10px;
+}
+.pr_size{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.product_img img{
+width: 80%;
+margin-left: auto;
+max-height: 708px;
+box-shadow: 0 14px 28px rgba(0,0,0,0.30), 0 10px 10px rgba(0,0,0,0.30);
+max-width: 530px;
+}
+.product_info {
+    width: 30%;
+    margin-left: 30px;
+}
+.pr_size_value {
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: 'Kaushan Script', cursive;
+    padding: 8px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+.pr_size{
+    margin-bottom: 20px;
+}
+.buy_button{
+    width: 80%;
+    font-size: 25px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: #ff6163;
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.buy_button:hover{
+    opacity: 0.8;
+}
+.is-active {
+    background-color: white;
+    border-color: red;
+    box-sizing: border-box;
+    
+}
+.pr_desc {
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 0.8px;
+}
+.pr_desc_title{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.pr_desc_text{
+    font-size: 15px;
+}
+.pr_char{
+    display: flex;
+    flex-direction: column;
+}
+.pr_char_title{
+    margin-bottom: 10px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 18px;
+}
+.pr_char_title_in{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 14px;
+    color: #999999;
+}
+.pr_char_text{
+     font-family: 'Kaushan Script', cursive;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+.pr_char_inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*product comment*/
+.pr_comment {
+display: none;
+position: relative;
+flex-direction: column;
+background-color:#f7f7f7 ;
+margin-top: 20px;
+padding-left: 20px;
+padding-top: 20px;
+}
+.pr_comment_show
+{
+    display: flex;
+}
+.fa-star_rat {
+   color: #5c5c75;
+}
+.s1:hover {
+    color: black;
+}
+.s2:hover ~ .s1  {
+    color: black;
+}
+.comment_title,.comment_text, .comment_user_info,.comment {
+font-family: 'Kaushan Script', cursive;
+letter-spacing: 0.8px;
+margin-bottom: 10px;
+}
+.comment_title{
+    font-size: 25px;
+}
+.comment_user_info{
+    display: flex;
+    flex-direction: row;
+}
+.info_input{
+    height: 35px;
+}
+.info_input input{
+    height: 100%;
+    width: 90%;
+}
+
+.comment_info_input input{
+    height: 100px;
+    width: 93%;  
+}
+.comment_button{
+    width: 95%;
+    height: 40px;
+    background-color: #ff6163;
+    font-family: 'Kaushan Script', cursive;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+.comment_button:hover {
+    opacity: 0.8;
+}
+.pr_feed_button_is, .pr_feed_button_no {
+    background-color: white;
+    border: none;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 15px;
+    color: #ff6163;
+}
+.pr_feed_button_no {
+    display: none;
+    position: relative;
+}
+/*CREATING*/
+.creating_catalog_title {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 0.8px;
+    margin-top: 30px;
+}
+.creating__clothes_iiner{
+    display: flex;
+    flex-direction: column;
+}
+.creating_catalog{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0;
+}
+.creating_item{
+    margin-left: 10px;
+}
+.creating_item_img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.creating_item_text {
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 0.8px;
+    font-size: 13px;
+}
+.creating_item_text_cost{
+    color: #999999;
+}
+.creating_item_img img:hover {
+    opacity: 0.7;
+}
+.current_img {
+    display: flex;
+    position: relative;
+    margin-left: auto;
+}
+.classic {
+    display: flex;
+    margin-left: auto;
+    border: 1px solid #999999;
+    justify-content: center;
+    border-radius: 5px 0 0 5px;
+}
+.classic img {
+    width: 70%;
+}
+.classic_add {
+    position: absolute;
+    left: 21.5%;
+}
+.creating_curcent_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+.current_param{
+    display: flex;
+    width: 50%;
+    
+}
+.current_param_inner {
+    border: 1px solid #999999;
+    border-radius: 0 5px 5px 0;
+    border-left: none;
+    padding-left:40px ;
+}
+.current_param_title, .current_param_button, .current_param_cost, .current_param_color{
+    margin-bottom: 20px;
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 0.8px;
+}
+.current_param_cost {
+    font-size: 18px;
+}
+.current_param_title {
+    margin-top: 10px;
+    font-size: 25px;
+    margin-right: 40px;
+}
+.current_param_button {
+    display: flex;
+}
+.current_param_button button {
+    width: 50%;
+    height: 50px;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: #ff6163;
+    color: white;
+    border: none;
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 0.8px;
+}
+.current_param_button button:hover {
+    opacity: 0.8;
+}
+.current_param_color_item{
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+}
+#prs2 {
+    background-color: black;
+}
+#prs3 {
+    background-color: red;
+}
+#prs4 {
+    background-color: green;
+}
+#prs5 {
+    background-color: blue;
+}
+#prs6 {
+    background-color: yellow;
+}
+.current_param_color_item:hover {
+    opacity: 0.8;
+}
+/*musick product*/
+.tracks{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    margin-left: 0;
+}
+/*Footer*/
+
+.container--footer {
+    padding: 20px 20px;
+    width: auto;
+}
+.footer {
+  flex: 0 0 auto; 
+}
+.footer__iner{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer__block{
+    width: 33.3333%;
+    text-align: center;
+}
+.footer__title{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Kaushan Script', cursive;
+}
+.footer__address{
+    font-size: 17px;
+    line-height: 1.5;
+    font-style: normal;
+    letter-spacing: 0.8px;
+    color: rgba(255, 255, 255, .5);
+
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+.social__item {
+    display: flex;
+    margin-right: 5px;
+}
+.social__item:hover{
+    transform: scale(1.2);
+}
+.link{
+     display: flex;
+    flex-direction: column;
+}
+.link__item{
+    font-size: 17px;
+    line-height: 1.5;
+    font-style: normal;
+    color: rgba(255, 255, 255, .5);
+    text-decoration: none;
+    letter-spacing: 0.8px;
+    margin-top: 5px;
+}
+.link__item:hover{
+    color: #fff;
+}
+
+}
+@media(max-width: 1024px)
+{
+    .wrapper {
+        height: auto;
+    }
+    .nav {
+    display: none;
+    }
+    .menu-open{
+        display: block;
+    }
+    .menu__g {
+        
+        display: flex;
+    }
+    .nav>ul>li {
+    float: none;
+
+}
+
+.product__inner{
+    flex-direction: column;
+}
+.product_img{
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+.product_img img{
+    max-height: 760px;
+    margin-left: 0;
+}
+.product_info{
+    width: 95%;
+}
+}
+@media (max-width: 768px) {
+    .content{
+        display: none;
+    }
+    .catalog_hr{
+        display: none;
+    }
+    .catalog__row{
+        flex-direction: column;
+        align-items: center;
+    }
+    /*Clothes*/
+    .content__clothes{
+        flex-direction: column;
+    }
+    .clothes{
+        margin-left: 0;
+    }
+    .right {
+        margin-top: 20px;
+    }
+    /*catalog*/
+    .cc_item{
+        width: 40%;
+    }
+    .catalog__filter_container {
+        width: 50%;
+    }
+}
+
+
+@media(max-width: 575px){
+.text{
+    display: none;
+}
+.lc_inner {
+    flex-direction: column;
+}
+.lc_left {
+    justify-content: center;
+    margin-right: 0;
+    text-align: center;
+}
+    .social{
+        flex-direction: column;
+        align-items: center;
+    }
+    .social__item{
+        margin-top: 5px;
+    }
+        .cc_item {
+        width: 100%;
+    }
+    .catalog__filter_container {
+        width: 100%;
+    }
+    .product_info {width: 90%;}
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
