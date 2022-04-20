@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>!DOCTYPE</title>
+   <meta charset="utf-8">
+   <link href="css/style.css" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link rel="stylesheet" href="font/font-awesome-4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+
+  <script src="js/main.js"></script>
+
+ </head>
+ <body>
+
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="logo"><a href="index.html"><img src="img/lg.png" alt=""></a>     
+        </div>
+        <nav class="nav">
+          <ul class="menu">
+            <li class="menu_item"><a href="" class="nav__link">Разделы</a>
+         <ul class="dropmenu"> 
+            <li class="dropmenu_item"><a href="clothes.html" class="menu__link">Одежда</a></li>
+            <li class="dropmenu_item"><a href="music.html" class="menu__link">Музыка</a></li>
+            <li class="dropmenu_item"><a href="picture.html" class="menu__link">Картины</a></li>
+            <li class="dropmenu_item"><a href="books.html" class="menu__link">Книги</a></li>
+          </ul>
+        </li>
+            <li class="menu_item "><a href="#0" class="nav__link" onclick="document.getElementById('id02').style.display='block'">Вход</a></li>
+            <li class="menu_item " ><a href="#0" class="nav__link" onclick="document.getElementById('id01').style.display='block'" >Регистрация</a></li>
+          </ul> 
+        </nav>
+        <div class="menu__g">
+
+          <div class="text">Menu</div>
+        <button  class="menu-open">
+                  <svg viewBox="0 0 100 80" width="40" height="40">
+    <rect width="100" height="10" rx="10" fill="white"></rect>
+    <rect y="30" width="100" height="10" rx="10" fill="white"></rect>
+    <rect y="60" width="100" height="10" rx="10" fill="white"></rect>
+    </svg>
+        </button>
+        </div>
+<!-----------------------SING_UP--------------------------------->
+<div id="id01" class="singup">
+  <form class="singup-content" action="#">
+
+    <div class="singup_container">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+      <h2>Регистрация</h2>
+      <p>Пожалуйста, заполните форму регистрации</p>
+      <hr class="singup_hr">
+      <label for="email"><b>Электронная почта</b></label>
+      <input class="singup_input" type="text" placeholder="Введите почту" name="email" required>
+
+      <label for="psw"><b>Пароль</b></label>
+      <input class="singup_input" type="password" placeholder="Введите пароль" name="psw" required>
+
+      <label for="psw-repeat"><b>Повторите пароль</b></label>
+      <input class="singup_input" type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+      
+      <label>
+        <input  type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
+      </label>
+
+      <p>Создавая аккаунт, вы соглашаетесь с нашими <a href="#" style="color:dodgerblue">условиями</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn singup_button">Закрыть</button>
+        <button type="submit" class="signupbtn singup_button">Зарегистрироваться</button>
+      </div>
+    </div>
+  </form>
+</div>
+<!-----------------------SING_IN--------------------------------->
+<div id="id02" class="singin">
+  <form class="singin-content" action="#">   
+    <div class="singin_container">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+      <h2>Вход</h2>
+      <p>Пожалуйста, заполните форму входа</p>
+      <hr class="singup_hr">
+      <label for="uname"><b>Логин</b></label>
+      <input class="singin_input" type="text" placeholder="Введите логин" name="uname" required>
+
+      <label for="psw"><b>Пароль</b></label>
+      <input class="singin_input" type="password" placeholder="Введите пароль" name="psw" required>
+        
+      <button class="singin_button" type="submit">Войти</button>
+      <label>
+        <input class="singin_input" type="checkbox" checked="checked" name="remember"> Запомнить меня
+      </label>
+    </div>
+
+    <div class="singin_container" style="background-color:#f1f1f1">
+      <button class="singin_button cancelbtnlog"type="button" onclick="document.getElementById('id02').style.display='none'" >Закрыть</button>
+      <span class="psw">Забыли <a href="#">пароль?</a></span>
+    </div>
+  </form>
+</div>
+</header>
+<!-- Flickity HTML init -->
+<div class="gallery js-flickity"
+  data-flickity-options='{ "wrapAround": true }'>
+  <div class="gallery-cell"></div>
+  <div class="gallery-cell"></div>
+  <div class="gallery-cell"></div>
+  <div class="gallery-cell"></div>
+  <div class="gallery-cell"></div>
+</div>
+  <div class="wrapper">
+    <div class="creating__clothes_iiner">
+
+        <div class="creating__clothes">
+         <div class="creating_catalog_title">Конструктор одежды с принтом</div>
+             <div class="catalog_path">
+      <div class="path_title">    
+        <h2>Одежда</h2>
+      </div>
+            <div class="path_text">
+              Главная / Одежда / Конструктор
+      </div>
+    </div>
+         <hr>
+      <div class="creating_catalog">
+        <div class="creating_item">
+          <div class="creating_item_img"><img src="img/creat_icon_1.png" alt=""></div>
+          <div class="creating_item_text">
+                      <div class="creating_item_text_title">Футболка базовая</div>
+            <div class="creating_item_text_cost">От 1190</div></div>
+        </div>
+                <div class="creating_item">
+          <div class="creating_item_img"><img src="img/creat_icon_2.png" alt=""></div>
+          <div class="creating_item_text">
+            <div class="creating_item_text_title">Футболка базовая</div>
+            <div class="creating_item_text_cost">От 1190</div>
+          </div>
+        </div>
+                <div class="creating_item">
+          <div class="creating_item_img"><img src="img/creat_icon_3.png" alt=""></div>
+          <div class="creating_item_text">
+            <div class="creating_item_text_title">Футболка базовая</div>
+            <div class="creating_item_text_cost">От 1190</div></div>
+        </div>
+                <div class="creating_item">
+          <div class="creating_item_img"><img src="img/creat_icon_4.png" alt=""></div>
+          <div class="creating_item_text">
+                      <div class="creating_item_text_title">Футболка базовая</div>
+            <div class="creating_item_text_cost">От 1190</div></div>
+        </div>
+                <div class="creating_item">
+          <div class="creating_item_img"><img src="img/creat_icon_5.png" alt=""></div>
+          <div class="creating_item_text">
+                        <div class="creating_item_text_title">Футболка базовая</div>
+            <div class="creating_item_text_cost">От 1190</div>
+          </div>
+        </div>
+                <div class="creating_item">
+          <div class="creating_item_img"><img src="img/creat_icon_6.png" alt=""></div>
+          <div class="creating_item_text">
+                        <div class="creating_item_text_title">Футболка базовая</div>
+            <div class="creating_item_text_cost">От 1190</div>
+          </div>
+        </div>
+                <div class="creating_item">
+          <div class="creating_item_img"><img src="img/creat_icon_7.png" alt=""></div>
+          <div class="creating_item_text">
+                      <div class="creating_item_text_title">Футболка базовая</div>
+            <div class="creating_item_text_cost">От 1190</div></div>
+        </div>
+      </div>
+      <div class="creating_curcent_item">
+        <div class="current_img">
+          <div class="classic"><img src="img/classic.png" alt=""></div>
+          <div class="classic_add"><img src="img/classic_add.png" alt=""></div>
+        </div>
+        <div class="current_param">
+          <div class="current_param_inner">
+            <div class="current_param_title">Футболка классическая</div>
+            <div class="current_param_button"><button>Создать принт</button></div>
+            <div class="current_param_cost">от 1190 <span class="rub">Р</span></div>
+            <div class="current_param_color">
+              <button id="prs1" class="current_param_color_item"><i class="fa gray" aria-hidden="true"></i></button>
+              <button id="prs2" class="current_param_color_item"><i class="fa black" aria-hidden="true"></i></button>
+              <button id="prs3" class="current_param_color_item"><i class="fa red" aria-hidden="true"></i></button>
+              <button id="prs4" class="current_param_color_item"><i class="fa green" aria-hidden="true"></i></button>
+              <button id="prs5" class="current_param_color_item"><i class="fa blue" aria-hidden="true"></i></button>
+              <button id="prs6" class="current_param_color_item"><i class="fa yellow" aria-hidden="true"></i></button>
+            </div>
+            <div class="current_param_size">
+          <button id="pr1" class="pr_size_value">S</button>
+          <button id="pr2" class="pr_size_value">M</button>
+          <button id="pr3" class="pr_size_value">L</button>
+          <button id="pr4" class="pr_size_value">XL</button>
+        </div>
+
+          </div>
+        </div>
+      </div>
+</div>
+<hr>
+</div>
+
+
+<!--Footer-->
+<footer class="footer">
+  <div class="container container--footer">
+    <div class="footer__iner">
+      <!--FB_1-->
+      <div class="footer__block">
+        <h4 class="footer__title">Где нас найти</h4>
+        <address class="footer__address">
+          <p>г. Пермь, ул. Макаренко, д. 12а</p>
+          <p>Вход со двора</p>
+        </address>
+      </div>
+      <!--FB_2-->
+        <div class="footer__block">
+        <h4 class="footer__title">Мы в соц. сетях</h4>
+        <div class="social">
+          <a class="social__item" href="#">
+            <img src="img/Circle/SVG color/Facebook.svg" alt="" height="30px" width="30px">
+          </a>
+              <a class="social__item" href="#">
+            <img src="img/Circle/SVG color/Instagram.svg" alt="" height="30px" width="30px">
+          </a>
+              <a class="social__item" href="#">
+            <img src="img/Circle/SVG color/VK.svg" alt="" height="30px" width="30px">
+          </a>
+            <a class="social__item" href="#">
+            <img src="img/Circle/SVG color/WhatsApp.svg" alt="" height="30px" width="30px">
+          </a>
+              <a class="social__item" href="#">
+            <img src="img/Circle/SVG color/Twitter.svg" alt="" height="30px" width="30px">
+          </a>
+        </div>
+      </div>
+      <!--FB_3-->
+                <div class="footer__block">
+        <h4 class="footer__title">Помощь</h4>
+        <div class="link">
+        <a class="link__item" href="#">Центр поддержки</a>
+        <a class="link__item" href="#">Как оформить заказ</a>
+        <a class="link__item" href="#">Условия доставки</a>
+        <a class="link__item" href="#">Возврат</a></div>
+      </div>
+    </div>
+
+
+  </div>
+</footer>
+  </div>
+
+ </body> 
+</html>

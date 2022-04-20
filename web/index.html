@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>!DOCTYPE</title>
+   <meta charset="utf-8">
+   <link href="css/style.css" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+
+  <script src="js/main.js"></script>
+
+ </head>
+ <body>
+
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+
+        <div class="logo"><a href="#"><img src="img/lg.png" alt=""></a>
+        </div>
+        <nav class="nav">
+          <ul class="menu">
+            <li class="menu_item"><a href="" class="nav__link">Разделы</a>
+         <ul class="dropmenu"> 
+            <li class="dropmenu_item"><a href="clothes.html" class="menu__link">Одежда</a></li>
+            <li class="dropmenu_item"><a href="music.html" class="menu__link">Музыка</a></li>
+            <li class="dropmenu_item"><a href="picture.html" class="menu__link">Картины</a></li>
+            <li class="dropmenu_item"><a href="books.html" class="menu__link">Книги</a></li>
+          </ul>
+        </li>
+            <li class="menu_item "><a href="#0" class="nav__link" onclick="document.getElementById('id02').style.display='block'">Вход</a></li>
+            <li class="menu_item " ><a href="#0" class="nav__link" onclick="document.getElementById('id01').style.display='block'" >Регистрация</a></li>
+          </ul> 
+        </nav>
+        <div class="menu__g">
+
+          <div class="text">Menu</div>
+        <button  class="menu-open">
+                  <svg viewBox="0 0 100 80" width="40" height="40">
+    <rect width="100" height="10" rx="10" fill="white"></rect>
+    <rect y="30" width="100" height="10" rx="10" fill="white"></rect>
+    <rect y="60" width="100" height="10" rx="10" fill="white"></rect>
+    </svg>
+        </button>
+        </div>
+<!-----------------------SING_UP--------------------------------->
+<div id="id01" class="singup">
+  <form class="singup-content" action="#">
+
+    <div class="singup_container">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+      <h2>Регистрация</h2>
+      <p>Пожалуйста, заполните форму регистрации</p>
+      <hr class="singup_hr">
+      <label for="email"><b>Электронная почта</b></label>
+      <input class="singup_input" type="text" placeholder="Введите почту" name="email" required>
+
+      <label for="psw"><b>Пароль</b></label>
+      <input class="singup_input" type="password" placeholder="Введите пароль" name="psw" required>
+
+      <label for="psw-repeat"><b>Повторите пароль</b></label>
+      <input class="singup_input" type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+      
+      <label>
+        <input  type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
+      </label>
+
+      <p>Создавая аккаунт, вы соглашаетесь с нашими <a href="#" style="color:dodgerblue">условиями</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn singup_button">Закрыть</button>
+        <button type="submit" class="signupbtn singup_button">Зарегистрироваться</button>
+      </div>
+    </div>
+  </form>
+</div>
+<!-----------------------SING_IN--------------------------------->
+<div id="id02" class="singin">
+  <form class="singin-content" action="#">   
+    <div class="singin_container">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+      <h2>Вход</h2>
+      <p>Пожалуйста, заполните форму входа</p>
+      <hr class="singup_hr">
+      <label for="uname"><b>Логин</b></label>
+      <input class="singin_input" type="text" placeholder="Введите логин" name="uname" required>
+
+      <label for="psw"><b>Пароль</b></label>
+      <input class="singin_input" type="password" placeholder="Введите пароль" name="psw" required>
+        
+      <button class="singin_button" type="submit">Войти</button>
+      <label>
+        <input class="singin_input" type="checkbox" checked="checked" name="remember"> Запомнить меня
+      </label>
+    </div>
+
+    <div class="singin_container" style="background-color:#f1f1f1">
+      <button class="singin_button cancelbtnlog"type="button" onclick="document.getElementById('id02').style.display='none'" >Закрыть</button>
+      <span class="psw">Забыли <a href="#">пароль?</a></span>
+    </div>
+  </form>
+</div>
+</header>
+  <div class="wrapper">
+    <div class="content">
+      <div class="left_block">
+        <img src="img/leftb.png" alt="">
+      </div>
+      <div class="middle_block">
+        <div id="block1" class="block__item mes_1">Хей, куда я попал, где я?</div>
+        <div id="block2" class="block__item mes_2">Привет, вы находитесь на самом лучшем сайте.</div>
+        <div id="block3" class="block__item mes_1">И что же мне тут делать?</div>
+        <div id="block4" class="block__item mes_2"><a class="a_mes" href="/clothes.html">Здесь</a> вы сможете найти самые крутые и хайповые вещи. А если не найдете, то сможете создать сами.</div>
+        <div id="block5" class="block__item mes_1">И это все?</div>
+        <div id="block6" class="block__item mes_2"><a class="a_mes" href="music.html">Здесь</a> вы сможете найти музыку для любой ситуации: релакс, учеба, работа, игры и много другое.</div>
+        <div id="block7" class="block__item mes_1">Ладно, я пойду.</div>
+        <div id="block8" class="block__item mes_2">Подождите, уважаемый, <a class="a_mes" href="picture.html">здесь</a> вы сможете найти любую книгу для вашей души.</div>
+        <div id="block9" class="block__item mes_1">А картины у вас есть?</div>
+        <div id="block10" class="block__item mes_2">Конечно, <a class="a_mes" href="books.html">здесь</a> вы найдете множество картин, портретов, иллюстраций. </div>
+      </div>
+      <div class="right_block">
+        <img src="img/rightb.png" alt="">
+      </div>   
+</div>
+<div class="catalog">
+  <hr class="catalog_hr"> 
+  <div class="catalog__inner">
+    <h2 class="catalog_h">Заходи, не стесняйся</h2>
+
+    <div class="catalog__row">
+      <div class="catalog__item">
+        <div class="catalog__title">Одежда</div>
+        <div class="catalog__a">
+          <a href="clothes.html"><img src="img/tshort.png" alt=""></a>
+        </div>
+      </div>
+            <div class="catalog__item">
+        <div class="catalog__title">Музыка</div>
+        <div class="catalog__a">
+          <a href="music.html"><img src="img/ushi.jpg" alt=""></a>
+        </div>
+      </div>
+            <div class="catalog__item">
+        <div class="catalog__title">Книги</div>
+        <div class="catalog__a">
+          <a href="books.html"><img src="img/book1.jpg" alt=""></a>
+        </div>
+      </div>
+            <div class="catalog__item">
+        <div class="catalog__title">Картины</div>
+        <div class="catalog__a">
+          <a href="picture.html"><img src="img/kartina.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Footer-->
+<footer class="footer">
+  <div class="container container--footer">
+    <div class="footer__iner">
+      <!--FB_1-->
+      <div class="footer__block">
+        <h4 class="footer__title">Где нас найти</h4>
+        <address class="footer__address">
+          <p>г. Пермь, ул. Макаренко, д. 12а</p>
+          <p>Вход со двора</p>
+        </address>
+      </div>
+      <!--FB_2-->
+        <div class="footer__block">
+        <h4 class="footer__title">Мы в соц. сетях</h4>
+        <div class="social">
+          <a class="social__item" href="#">
+            <img src="img/Circle/SVG color/Facebook.svg" alt="" height="30px" width="30px">
+          </a>
+              <a class="social__item" href="#">
+            <img src="img/Circle/SVG color/Instagram.svg" alt="" height="30px" width="30px">
+          </a>
+              <a class="social__item" href="#">
+            <img src="img/Circle/SVG color/VK.svg" alt="" height="30px" width="30px">
+          </a>
+            <a class="social__item" href="#">
+            <img src="img/Circle/SVG color/WhatsApp.svg" alt="" height="30px" width="30px">
+          </a>
+              <a class="social__item" href="#">
+            <img src="img/Circle/SVG color/Twitter.svg" alt="" height="30px" width="30px">
+          </a>
+        </div>
+      </div>
+      <!--FB_3-->
+                <div class="footer__block">
+        <h4 class="footer__title">Помощь</h4>
+        <div class="link">
+        <a class="link__item" href="#">Центр поддержки</a>
+        <a class="link__item" href="#">Как оформить заказ</a>
+        <a class="link__item" href="#">Условия доставки</a>
+        <a class="link__item" href="#">Возврат</a></div>
+      </div>
+    </div>
+
+
+  </div>
+</footer>
+  </div>
+
+ </body> 
+</html>
